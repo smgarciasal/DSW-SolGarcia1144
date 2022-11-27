@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1>
+            CONOCER HTML: FLEX BOX, LISTAS Y ENLACES EN HTML
+        </h1>
+    </header>
+    <nav class="navegacion">
+        <UL>
+            <LI>Inicio</LI>
+            <li>Temas
+                <ul>
+                    <li>Tema1 Flex Box</li>
+                    <li>Tema2 Listas y enlaces en HTML
+                    </li>
+                </ul>
+            </li>
+            <li>Recursos</li>
+            <li>Aprendizaje
+                <Ul>
+                    <LI>Actividad 1</LI>
+                    <LI>Actividad 2</LI>
+    </nav>
+    <main class="contenedor">
+        <aside class="lateral">
+            <a class="twitter-timeline" data-height="450"
+                href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        </aside>
+        <section class="principal">
+            <h3>Concepto basico de Flex Box</h3>
+            <P>El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de
+                layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y
+                mejorar las capacidades de alineación. Este artículo hace un repaso de las principales características
+                de flexbox, las que exploraremos con mayor detalle en el resto de estas guías.
+
+
+                Cuando describimos a flexbox como unidimensional destacamos el hecho que flexbox maneja el layout en una
+                sola dimensión a la vez — ya sea como fila o como columna. Esto contrasta con el modelo bidimensional
+                del Grid Layout de CSS, el cual controla columnas y filas a la vez.
+            </P>
+            <Article>
+                <h4>Los dos ejes de Flex Box</h4>
+                <P>
+                    Cuando trabajamos con flexbox necesitamos pensar en términos de dos ejes — el eje principal y el eje
+                    cruzado. El eje principal está definido por la propiedad flex-direction, y el eje cruzado es
+                    perpendicular a este. Todo lo que hacemos con flexbox está referido a estos dos ejes, por lo que
+                    vale la pena entender cómo trabajan desde el principio.
+
+                <ul>
+                    <h3>El Eje Principal</h3>
+
+                    <p>El eje principal está definido por flex-direction, que posee cuatro posibles valores:</p>
+
+                    <li>row</li>
+                    <li>row-reverse</li>
+                    <li>column</li>
+                    <li>column-reverse</li>
+
+                    <p>Si elegimos row o row-reverse, el eje principal correrá a lo largo de la fila según la dirección
+                        de la línea. <br>
+
+
+                        Al elegir column o column-reverse el eje principal correrá desde el borde superior de la página
+                        hasta el final — según la dirección del bloque. <br>
+
+                    <h3>El Eje Cruzado</h3>
+
+                    El eje cruzado va perpendicular al eje principal, y por lo tanto si flex-direction (del eje
+                    principal) es row o row-reverse el eje cruzado irá por las columnas.
+
+                    El eje cruzado va perpendicular al eje principal, y por lo tanto si flex-direction (del eje
+                    principal) es row o row-reverse el eje cruzado irá por las columnas.
+
+                    Entender cuál eje es cuál es importante cuando empezamos a mirar la alineación y justificación
+                    flexible de los ítems; flexbox posee propiedades que permiten alinear y justificar el contenido
+                    sobre un eje o el otro.
+
+                    </p>
+
+                </ul>
+                </P>
+            </Article>
+            <article>
+                <H4>El contenedor Flex</H4>
+                <P>
+                    Un área del documento que contiene un flexbox es llamada contendedor flex. Para crear un contenedor
+                    flex, establecemos la propiedad del área del contenedor display como flex o inline-flex. Tan pronto
+                    como hacemos esto, los hijos directos de este contenedor se vuelven ítems flex. Como con todas las
+                    propiedades de CSS, se definen algunos valores iniciales, así que cuando creemos un contenedor flex
+                    todos los ítems flex contenidos se comportarán de la siguiente manera.
+
+                    <li>Los ítems se despliegan sobre una fila (la propiedad flex-direction por defecto es row).</li>
+                    <li>Los ítems empiezan desde el margen inicial sobre el eje principal.</li>
+                    <li>Los ítems no se ajustan en la dimensión principal, pero se pueden contraer.</li>
+                    <li>Los ítems se ajustarán para llenar el tamaño del eje cruzado.</li>
+                    <li>La propiedad flex-basis es definida como auto.</li>
+                    <li>La propiedad flex-wrap es definida como nowrap.</li>
+
+                <p>
+                    El resultado es que todos los ítems se alinearán en una solo fila, usando el tamaño del contenedor
+                    como su tamaño en el eje principal. Si hay más ítems de los que caben en el contenedor, estos no
+                    pasarán más abajo si no que sobrepasarán el margen. Si hay ítems más altos que otros, todos los
+                    ítems serán ajustados en el eje cruzado para alcanzar al mayor.
+
+                </p>
+
+                </P>
+            </article>
+
+        </section>
+
+    </main>
+    <footer class="pie de pagina">
+        <p>
+
+        <H3>Nombre: Sol Maria Garcia</H3>
+        <H3>Septiembre 24-09-2022</H3>
+        <h3>Skype: sole150_2009@hotmail.com</h3>
+        <h3>Correo: solmariagaciasalazar@gmail.com</h3>
+        <h4>Celular: 318253522</h4>
+        </p>
+
+    </footer>
+
+</body>

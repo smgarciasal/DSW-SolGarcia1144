@@ -1,0 +1,30 @@
+.encabezado{
+    background: #E6B325;
+    padding: 30px;
+}
+.navegacion{
+    background: #A47E3B;
+    padding: 30px;
+}
+.contenedor{
+    background: #BF9742;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1rf ;
+
+}
+.principal{
+    background: #61481C;
+    padding: 30px;
+    grid-column: 2/5;
+}
+.lateral{
+    background: #E6B325;
+    padding: 30px;
+    grid-column: 1/2;
+
+}
+.pie{
+    background: #A47E3B;
+    padding: 30px;
+}
